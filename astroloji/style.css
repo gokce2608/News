@@ -1,0 +1,65 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Bebas+Neue&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Code+Pro:ital,wght@1,668&display=swap');
+</style>
+body{
+
+}
+nav{
+
+}
+
+/*
+.logo-container {
+                display: flex; 
+                align-items: center; 
+                justify-content: flex-start; 
+                width: 100%;
+                height: 80px;
+                flex-direction: row;
+            }
+            
+            a {
+                font-size: 30px; 
+                margin-right: 15px; 
+                color: midnightblue;
+                text-decoration: none;
+                font-family: "Lobster",sans-serif;
+            }
+            
+            img {
+                width: 86.65px;
+                height: auto;
+                order: -1;
+                margin-right: 15px;
+            }
+*/
+
+/* Nav çubuğu düzeni */
+.logo-container {
+                display: flex; 
+                align-items: center;  /* Dikeyde ortalama */
+                justify-content: flex-start; 
+                width: 100%;
+                height: 80px;
+                flex-direction: row;
+                background-color: red;
+            }
+            
+            a {
+                font-size: 30px; /* Yazı boyutunu ayarla */
+                margin-right: 10px; /* Resim ile yazı arasındaki boşluk */
+                color: midnightblue;
+                text-decoration: none;
+                font-family: "Lobster", sans-serif;
+                display: flex;
+                align-items: center; /* Yazıyı dikeyde ortalar */
+                line-height: 1; /* Satır yüksekliğini hizalamak için */
+            }
+            
+            img {
+                width: 60px; 
+                height: auto; 
+                order: -1; 
+                margin-right: 10px; 
+            }
+            
