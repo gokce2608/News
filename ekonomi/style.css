@@ -1,0 +1,25 @@
+/* Ana logo kapsayıcı */
+.logo-container {
+   font-size: 36px;
+   font-weight: bold;
+   color: #0a0425;
+   font-family: "Lobster" ,sans-serif;
+   text-decoration: none;
+   margin-left: -50px;
+}
+  /* Görsel logo */
+  .logo-img {
+    width: 150px; /* Görselin genişliği */
+    height: auto; /* Görselin yüksekliği */
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-left:-40px;
+  }
+  
+  img {
+    width: 60px;
+    height: auto;
+    order: -1;
+    margin-right: 10px;
+
+  }
