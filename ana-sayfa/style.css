@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Code+Pro:ital,wght@1,668&display=swap'); 
 
 *{
     margin: 0;
@@ -9,6 +10,7 @@ a{
     text-decoration: none;
     color:midnightblue;
     font-size: 20px;
+    font-family: "Kanit", sans-serif;
 }
 
 body{
@@ -62,7 +64,7 @@ nav{
 .nav-container{
     display: flex;
     justify-content: flex-end;
-    gap: 10px;
+    gap: 4px;
 }
 
 .nav-container ul{
@@ -86,4 +88,212 @@ nav{
 
 .nav-container ul .nav-link:hover {
     border-bottom: 2px solid midnightblue;
+}
+
+/* Hover durumu için kutuyu ekliyoruz */
+.nav-container ul .nav-link.afetler:hover::after {
+    content: "AFETLER"; /* Yazıyı kutuya ekliyoruz */
+    position: absolute;
+    top: 60px; /* Kutu metnin altında yer alacak */
+    left: 27.5%; /* Kutu, metnin ortasında olacak şekilde */
+    transform: translateX(-50%); /* Kutuya tam ortalanma */
+    background-color:black; /* Kutunun arka plan rengi */
+    padding: 10px 10px; /* Kutunun içine boşluk ekliyoruz */
+    border-radius: 5px; /* Köşe yuvarlatma */
+    font-size: 16px; /* Kutudaki yazı boyutunu ayarlıyoruz */
+    font-family: "Kanit", sans-serif;
+    color: white; /* Yazı rengi */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Kutunun etrafına gölge ekliyoruz */
+    z-index: 10; /* Kutuyu yazının önünde göstermek için */
+    width: auto; /* Kutunun genişliği metne uyacak şekilde otomatik olsun */
+    min-width: 120px; /* Minimum genişlik belirliyoruz, daha küçük olmasın */
+    text-align: center; /* Yazıyı ortalıyoruz */
+}
+
+/* Hover durumu için kutuyu ekliyoruz */
+.nav-container ul .nav-link.astroloji:hover::after {
+    content: "ASTROLOJİ"; /* Yazıyı kutuya ekliyoruz */
+    position: absolute;
+    top: 60px; /* Kutu metnin altında yer alacak */
+    left: 39%; /* Kutu, metnin ortasında olacak şekilde */
+    transform: translateX(-50%); /* Kutuya tam ortalanma */
+    background-color:black; /* Kutunun arka plan rengi */
+    padding: 10px 10px; /* Kutunun içine boşluk ekliyoruz */
+    border-radius: 5px; /* Köşe yuvarlatma */
+    font-size: 16px; /* Kutudaki yazı boyutunu ayarlıyoruz */
+    font-family: "Kanit", sans-serif;
+    color: white; /* Yazı rengi */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Kutunun etrafına gölge ekliyoruz */
+    z-index: 10; /* Kutuyu yazının önünde göstermek için */
+    width: auto; /* Kutunun genişliği metne uyacak şekilde otomatik olsun */
+    min-width: 120px; /* Minimum genişlik belirliyoruz, daha küçük olmasın */
+    text-align: center; /* Yazıyı ortalıyoruz */
+}
+
+/* Hover durumu için kutuyu ekliyoruz */
+.nav-container ul .nav-link.cinayet:hover::after {
+    content: "CİNAYET"; /* Yazıyı kutuya ekliyoruz */
+    position: absolute;
+    top: 60px; /* Kutu metnin altında yer alacak */
+    left: 50%; /* Kutu, metnin ortasında olacak şekilde */
+    transform: translateX(-50%); /* Kutuya tam ortalanma */
+    background-color:black; /* Kutunun arka plan rengi */
+    padding: 10px 10px; /* Kutunun içine boşluk ekliyoruz */
+    border-radius: 5px; /* Köşe yuvarlatma */
+    font-size: 16px; /* Kutudaki yazı boyutunu ayarlıyoruz */
+    font-family: "Kanit", sans-serif;
+    color: white; /* Yazı rengi */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Kutunun etrafına gölge ekliyoruz */
+    z-index: 10; /* Kutuyu yazının önünde göstermek için */
+    width: auto; /* Kutunun genişliği metne uyacak şekilde otomatik olsun */
+    min-width: 120px; /* Minimum genişlik belirliyoruz, daha küçük olmasın */
+    text-align: center; /* Yazıyı ortalıyoruz */
+}
+
+
+/* Hover durumu için kutuyu ekliyoruz */
+.nav-container ul .nav-link.ekonomi:hover::after {
+    content: "EKONOMİ"; /* Yazıyı kutuya ekliyoruz */
+    position: absolute;
+    top: 60px; /* Kutu metnin altında yer alacak */
+    left: 61%; /* Kutu, metnin ortasında olacak şekilde */
+    transform: translateX(-50%); /* Kutuya tam ortalanma */
+    background-color:black; /* Kutunun arka plan rengi */
+    padding: 10px 10px; /* Kutunun içine boşluk ekliyoruz */
+    border-radius: 5px; /* Köşe yuvarlatma */
+    font-size: 16px; /* Kutudaki yazı boyutunu ayarlıyoruz */
+    font-family: "Kanit", sans-serif;
+    color: white; /* Yazı rengi */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Kutunun etrafına gölge ekliyoruz */
+    z-index: 10; /* Kutuyu yazının önünde göstermek için */
+    width: auto; /* Kutunun genişliği metne uyacak şekilde otomatik olsun */
+    min-width: 120px; /* Minimum genişlik belirliyoruz, daha küçük olmasın */
+    text-align: center; /* Yazıyı ortalıyoruz */
+}
+
+/* Hover durumu için kutuyu ekliyoruz */
+.nav-container ul .nav-link.magazin:hover::after {
+    content: "MAGAZİN"; /* Yazıyı kutuya ekliyoruz */
+    position: absolute;
+    top: 60px; /* Kutu metnin altında yer alacak */
+    left: 72%; /* Kutu, metnin ortasında olacak şekilde */
+    transform: translateX(-50%); /* Kutuya tam ortalanma */
+    background-color:black; /* Kutunun arka plan rengi */
+    padding: 10px 10px; /* Kutunun içine boşluk ekliyoruz */
+    border-radius: 5px; /* Köşe yuvarlatma */
+    font-size: 16px; /* Kutudaki yazı boyutunu ayarlıyoruz */
+    font-family: "Kanit", sans-serif;
+    color: white; /* Yazı rengi */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Kutunun etrafına gölge ekliyoruz */
+    z-index: 10; /* Kutuyu yazının önünde göstermek için */
+    width: auto; /* Kutunun genişliği metne uyacak şekilde otomatik olsun */
+    min-width: 120px; /* Minimum genişlik belirliyoruz, daha küçük olmasın */
+    text-align: center; /* Yazıyı ortalıyoruz */
+}
+
+/* Hover durumu için kutuyu ekliyoruz */
+.nav-container ul .nav-link.sağlık:hover::after {
+    content: "SAĞLIK"; /* Yazıyı kutuya ekliyoruz */
+    position: absolute;
+    top: 60px; /* Kutu metnin altında yer alacak */
+    left: 82%; /* Kutu, metnin ortasında olacak şekilde */
+    transform: translateX(-50%); /* Kutuya tam ortalanma */
+    background-color:black; /* Kutunun arka plan rengi */
+    padding: 10px 10px; /* Kutunun içine boşluk ekliyoruz */
+    border-radius: 5px; /* Köşe yuvarlatma */
+    font-size: 16px; /* Kutudaki yazı boyutunu ayarlıyoruz */
+    font-family: "Kanit", sans-serif;
+    color: white; /* Yazı rengi */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Kutunun etrafına gölge ekliyoruz */
+    z-index: 10; /* Kutuyu yazının önünde göstermek için */
+    width: auto; /* Kutunun genişliği metne uyacak şekilde otomatik olsun */
+    min-width: 120px; /* Minimum genişlik belirliyoruz, daha küçük olmasın */
+    text-align: center; /* Yazıyı ortalıyoruz */
+}
+
+/* Hover durumu için kutuyu ekliyoruz */
+.nav-container ul .nav-link.spor:hover::after {
+    content: "SPOR"; /* Yazıyı kutuya ekliyoruz */
+    position: absolute;
+    top: 60px; /* Kutu metnin altında yer alacak */
+    left: 92%; /* Kutu, metnin ortasında olacak şekilde */
+    transform: translateX(-50%); /* Kutuya tam ortalanma */
+    background-color:black; /* Kutunun arka plan rengi */
+    padding: 10px 10px; /* Kutunun içine boşluk ekliyoruz */
+    border-radius: 5px; /* Köşe yuvarlatma */
+    font-size: 16px; /* Kutudaki yazı boyutunu ayarlıyoruz */
+    font-family: "Kanit", sans-serif;
+    color: white; /* Yazı rengi */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Kutunun etrafına gölge ekliyoruz */
+    z-index: 10; /* Kutuyu yazının önünde göstermek için */
+    width: auto; /* Kutunun genişliği metne uyacak şekilde otomatik olsun */
+    min-width: 120px; /* Minimum genişlik belirliyoruz, daha küçük olmasın */
+    text-align: center; /* Yazıyı ortalıyoruz */
+}
+
+
+.haber-cards{
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.haber-card{
+    width: 850px;
+    height: 500px;
+    background-color: blueviolet;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;          /* Resmin taşmasını engeller */
+    border: 1px solid #ccc;  /* Kart kenarına hafif bir sınır */
+    border-radius: 10px;        /* Kart köşelerini yuvarlatır */
+}
+
+.image{
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-bottom: 100px;
+    width: 95%;
+    height: 90%;
+    object-fit: cover;   /* Resmin orantılı şekilde alana sığmasını sağlar */
+    transition: opacity 1.5s ease-in-out; /* Yavaş geçiş efekti */
+    opacity: 1;
+}
+
+.image .src{
+    display: block;
+    width: 100%;
+}
+
+/* Sayılar için stil */
+.card-numbers {
+    display: flex;
+    justify-content:flex-start;
+    margin-top: 20px;
+    margin-left: 250px;
+}
+
+.ok{
+    font-size: 20px;
+    color: gray;
+}
+.number {
+    margin: 0 10px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: gray;  /* Normalde gri renkte */
+    transition: color 0.3s;
+}
+
+.number.active {
+    color:black;  /* Aktif sayıya mavi renk */
+}
+
+/* Sayıya tıklandığında (aktif hale geldiğinde) */
+.number:hover {
+    color: #ff6600;  /* Hoverda renk değişimi */
 }
