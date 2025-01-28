@@ -1,6 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Code+Pro:ital,wght@1,668&display=swap'); 
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: midnightblue;
+    font-size: 30px;
+    font-weight: 500;
+    margin-right: 20px;
+    font-family: "Kanit", sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 
 
@@ -10,10 +32,12 @@
     color: #0f053a; /* Yazının rengini ayarladık, isteğe bağlı */
     font-family: "Lobster",sans-serif;
     text-decoration: none;
-    margin-left: -50px;
+    margin-left: -30px;
    
     
 }
+
+
 
 /* Resmin boyutunu değiştirebiliriz */
 .logo-img {
@@ -50,4 +74,124 @@ nav a img{
     width: 60px;
     height: auto;
     margin-left: 20px;
+}
+
+
+/* Hover durumu için kutuyu ekliyoruz */
+.nav-link {
+    position: relative; /* Kutuyu doğru konumlandırabilmek için */
+    font-size: 30px; /* Ana sayfa linkinin boyutunu ayarlıyoruz */
+    color: midnightblue;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.nav-link:hover::after {
+    content: "ANA SAYFA"; /* Hoverda gösterilecek yazı */
+    position: absolute;
+    top: 100%; /* Kutu metnin hemen altında olacak */
+    left: 50%; /* Kutu metnin ortasında olacak */
+    transform: translateX(-50%); /* Kutuya tam ortalanma */
+    background-color: black; /* Kutunun arka plan rengi */
+    padding: 10px 20px; /* Kutunun içine boşluk ekliyoruz */
+    border-radius: 5px; /* Köşe yuvarlatma */
+    font-size: 16px; /* Kutudaki yazı boyutu */
+    font-family: "Kanit", sans-serif;
+    color: white; /* Yazı rengi */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Kutunun etrafına gölge */
+    z-index: 10; /* Kutuyu yazının önünde göstermek için */
+    width: auto; /* Kutunun genişliği metne uyacak şekilde otomatik */
+    min-width: 120px; /* Minimum genişlik */
+    text-align: center; /* Yazıyı ortalıyoruz */
+    opacity: 0; /* Başlangıçta görünmez */
+    transition: opacity 0.3s ease; /* Fade-in efekti */
+    white-space: nowrap; /* Metnin kırılmasını engeller, tek satırda kalır */
+}
+
+/* Hover durumunda kutu görünür olacak */
+.nav-link:hover::after {
+    opacity: 1; /* Hover olduğunda kutuyu görünür yapıyoruz */
+}
+
+
+/* Ekonomi bilgilerini yatayda göstermek için flexbox kullanıyoruz */
+.economy-info {
+    display: flex;
+    flex-wrap: wrap; /* Elemanları bir satırda sığmazsa yeni satıra geçirir */
+    justify-content: space-between; /* Elemanlar arasında eşit boşluk bırak */
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #f4f4f4; /* Arka plan rengini açık yapalım */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+
+/* Her bir öğe için stil */
+.economy-item {
+    flex: 1 1 150px; /* Her bir öğe en az 150px genişliğinde, geri kalan alana yayılabilir */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px; /* Öğeler arasına boşluk ekledik */
+}
+
+.economy-item p {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
+}
+
+/* Renkler ve simgeler */
+.economy-item:nth-child(1) p {
+    color: green; /* DOLAR için yeşil renk */
+}
+
+.economy-item:nth-child(2) p {
+    color: red; /* EURO için gri renk */
+}
+
+.economy-item:nth-child(3) p {
+    color: red; /* STERLİN için gri renk */
+}
+
+.economy-item:nth-child(4) p {
+    color: green; /* BITCOIN için yeşil renk */
+}
+
+.economy-item:nth-child(5) p {
+    color: green; /* BIST 100 için yeşil renk */
+}
+
+.economy-item:nth-child(6) p {
+    color: red; /* GRAM ALTIN için gri renk */
+}
+
+.economy-item:nth-child(7) p {
+    color: green; /* GÜMÜŞ için yeşil renk */
+}
+
+.economy-item:nth-child(8) p {
+    color: green; /* FAİZ için yeşil renk */
+}
+
+/* Görselin stili */
+.image-section {
+    text-align: center;  /* Görselin ortalanmasını sağlıyoruz */
+    margin-top: 40px;  /* Ekonomik verilerden görseli biraz daha ayırmak için boşluk ekliyoruz */
+}
+
+.economy-image {
+    background-color: none;  /* Görsel için açık gri bir arka plan */
+    padding: 20px;  /* Görselin etrafına boşluk ekliyoruz */
+    border-radius: 10px;  /* Görselin köşelerini yuvarlatıyoruz */
+    box-shadow: none;  /* Hafif bir gölge ekliyoruz */
+}
+
+.economy-image img {
+    width: 500px;  /* Görselin genişliği */
+    height: auto;  /* Yükseklik otomatik */
+    display: block;  /* Görselin altındaki boşlukları kaldırır */
+    margin-left: -30;
 }
