@@ -37,7 +37,7 @@ nav{
 /* Nav çubuğu düzeni */
 .logo-container {
                 display: flex; 
-                align-items: center;  /* Dikeyde ortalama */
+                align-items: center;  
                 justify-content: flex-start; 
                 width: 100%;
                 height: 80px;
@@ -46,14 +46,14 @@ nav{
             }
             
             a {
-                font-size: 30px; /* Yazı boyutunu ayarla */
-                margin-right: 10px; /* Resim ile yazı arasındaki boşluk */
+                font-size: 30px; 
+                margin-right: 10px; 
                 color: midnightblue;
                 text-decoration: none;
                 font-family: "Lobster", sans-serif;
                 display: flex;
-                align-items: center; /* Yazıyı dikeyde ortalar */
-                line-height: 1; /* Satır yüksekliğini hizalamak için */
+                align-items: center; 
+                line-height: 1; 
             }
             
             img {
@@ -62,4 +62,13 @@ nav{
                 order: -1; 
                 margin-right: 10px; 
             }
+
+.anasayfa a {
+                color: midnightblue;
+                font-family: "Lobster", sans-serif; 
+                font-size: 18px; 
+                text-decoration: none; 
+                margin-left: 1050px;
+              }
+              
             
