@@ -14,6 +14,7 @@ a{
 }
 
 body{
+    overflow-x: hidden; /*Yatayda hareketi kapatmak için kullanılır*/
     width: 100vw;
     height: 100vh;
     background-size: cover;
@@ -297,3 +298,92 @@ nav{
 .number:hover {
     color: #ff6600;  /* Hoverda renk değişimi */
 }
+
+
+.son{
+    background-color: dimgray;
+    height: 250px;
+    margin: 20px 0;
+    width: 100%;
+    position: relative; /* En alta yerleştirmek için */
+    bottom: 0; /* En alta sabitlemek için */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center; /* Yatay ortalama */
+    align-items: center; /* Dikey ortalama */
+    flex-direction: column; /* İçerikleri dikey olarak hizalamak için */
+    gap: 20px;
+}
+
+.instagram-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   
+}
+.social-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-container .social-item {
+    font-size: 40px;  
+    transition: 0.3s all ease-in-out;
+    border-radius: 50%;
+    color: #e4405f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #fff;
+    }
+
+.social-container a .social-item:hover  {
+    transform: scale(1.5); 
+    background-color: #e4405f;
+    color: #fff;
+}
+
+.social-container a {
+    color: inherit; /* Logonun rengini korumak için */
+}
+
+
+.github-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   
+}
+.social-container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-container1 .social-item {
+    font-size: 40px;  
+    transition: 0.3s all ease-in-out;
+    border-radius: 50%;
+    color: #171515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #fff;
+    }
+
+.social-container1 a .social-item:hover  {
+    transform: scale(1.5); 
+    background-color:#171515;
+    color: #fff;
+}
+
+.social-container1 a {
+    color: inherit; /* Logonun rengini korumak için */
+}
+
