@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+<<<<<<< HEAD
+
+=======
 @import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Code+Pro:ital,wght@1,668&display=swap'); 
 
 *{
@@ -23,6 +26,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
+>>>>>>> 1d83cc135f400b12a53e5d659d15a17f69d4b6ba
 
 
 
@@ -32,13 +36,20 @@ body{
     color: #0f053a; /* Yazının rengini ayarladık, isteğe bağlı */
     font-family: "Lobster",sans-serif;
     text-decoration: none;
+<<<<<<< HEAD
+    margin-left: -50px;
+=======
     margin-left: -30px;
+>>>>>>> 1d83cc135f400b12a53e5d659d15a17f69d4b6ba
    
     
 }
 
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> 1d83cc135f400b12a53e5d659d15a17f69d4b6ba
 /* Resmin boyutunu değiştirebiliriz */
 .logo-img {
     width: 150px; /* Resmin genişliğini belirledik */
@@ -74,6 +85,9 @@ nav a img{
     width: 60px;
     height: auto;
     margin-left: 20px;
+<<<<<<< HEAD
+}
+=======
 }
 
 
@@ -195,3 +209,4 @@ nav a img{
     display: block;  /* Görselin altındaki boşlukları kaldırır */
     margin-left: -30;
 }
+>>>>>>> 1d83cc135f400b12a53e5d659d15a17f69d4b6ba
