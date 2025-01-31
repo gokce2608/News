@@ -58,23 +58,23 @@
 */
 
 .anasayfa a:hover::after {
-    content: "ANA SAYFA"; /* Yazıyı kutuya ekliyoruz */
+    content: "ANA SAYFA"; 
     position: absolute;
     margin-left: 600px;
-    top: 70px; /* Kutuyu biraz daha yukarıya taşıyoruz */
-    left: 50%; /* Kutu, metnin ortasında olacak şekilde */
-    transform: translateX(-50%); /* Kutuya tam ortalanma */
-    background-color: black; /* Kutunun arka plan rengi */
-    padding: 10px 10px; /* Kutunun içine boşluk ekliyoruz */
-    border-radius: 5px; /* Köşe yuvarlatma */
-    font-size: 16px; /* Kutudaki yazı boyutunu ayarlıyoruz */
+    top: 70px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: black; 
+    padding: 10px 10px; 
+    border-radius: 5px; 
+    font-size: 16px; 
     font-family: "Kanit", sans-serif;
-    color: white; /* Yazı rengi */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Kutunun etrafına gölge ekliyoruz */
-    z-index: 10; /* Kutuyu yazının önünde göstermek için */
-    width: auto; /* Kutunun genişliği metne uyacak şekilde otomatik olsun */
-    min-width: 120px; /* Minimum genişlik belirliyoruz, daha küçük olmasın */
-    text-align: center; /* Yazıyı ortalıyoruz */
+    color: white; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    z-index: 10; 
+    width: auto; 
+    min-width: 120px; 
+    text-align: center; 
 }
 
 
@@ -82,12 +82,12 @@
 
 .news-container {
     width: 80%;
-    display: grid;  /* Grid düzeni ile yerleştirme */
-    grid-template-columns: repeat(3, 1fr);  /* Üç sütun halinde hizalama */
-    gap: 20px;  /* Sütunlar arasındaki boşluk */
-    justify-items: center;  /* Her kutuyu ortalamak için */
-    margin: 20px auto;  /* Ortalamak için */
-    padding: 20px 0;  /* Üst ve alt boşluk */
+    display: grid;  
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;  
+    justify-items: center;  
+    margin: 20px auto;  
+    padding: 20px 0;  
 }
 
 
@@ -115,7 +115,7 @@
     text-align: center;
 }
 
-/* Hover efekti ile kutunun büyümesi */
+
 .news-box:hover {
     transform: scale(1.05);
 }
