@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Code+Pro:ital,wght@1,668&display=swap'); 
 
 
 
@@ -10,10 +11,43 @@
     color: #0f053a; /* Yazının rengini ayarladık, isteğe bağlı */
     font-family: "Lobster",sans-serif;
     text-decoration: none;
-    margin-left: -50px;
+    margin-left: -10px;
    
     
 }
+
+
+
+.Ana-Sayfa a{
+    font-size: 25px;
+    text-decoration: none;
+    color: #0f053a;
+    font-weight: 700;
+    font-family: "Kanit", sans-serif;
+    padding: 10px 20px; /* Buton gibi görünmesi için iç boşluk ekliyoruz */
+    border-radius: 5px; /* Buton köşelerini yuvarlıyoruz */
+    transition: 0.2s all ease-in-out; /* Geçiş süresi ekliyoruz */
+    display: inline-block; /* Elemanın blok gibi davranmasını sağlıyoruz */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid #0f053a; /* Kenarlık ekliyoruz */
+    background-color: #f0f0f0; /* Arka plan rengi */
+    padding: 12px 25px;
+    height: 15px;
+    width: 100px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+   
+}
+
+.Ana-Sayfa a:hover {
+    transform: translateX(5px) rotate(2deg); /* Sallanma efekti */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    background-color: #0f053a; /* Rengi değiştirme */
+    color: white; /* Yazı rengini beyaz yapıyoruz */
+    transform: scale(1.05) translateX(5px) rotate(2deg);
+}
+
 
 /* Resmin boyutunu değiştirebiliriz */
 .logo-img {
@@ -52,6 +86,118 @@ nav a img{
     margin-left: 20px;
 }
 
+
+/* Cards konteyneri (kartları yerleştirecek ana konteyner) */
+/*.cards {
+    display: flex;
+    flex-wrap: wrap;  /* Kartların alt alta sarmasını sağlar */
+    /*gap: 20px;        /* Kartlar arasındaki yatay ve dikey mesafeyi ayarlıyoruz */
+   /* justify-content: space-between;  /* Kartlar arasında eşit boşluk bırakmak için */
+   /*/* padding: 20px;
+}
+
+/* Her bir kartın düzeni */
+/*.card {
+    width: 250px;
+    height: 350px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;  /* İçeriği dikey olarak sıralıyoruz */
+/*}
+
+/* Hover efekti */
+/*.card:hover {
+    transform: scale(1.05); /* Üzerine gelince büyüme */
+  /*  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Hover efektiyle daha büyük gölge */
+/*}
+
+/* Kart içindeki görsel */
+/*.card .image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out; /* Görselin geçiş animasyonu */
+/*}
+
+/* Kart içindeki bilgiler */
+/*.card .info {
+    padding: 15px;
+}
+
+.card .info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card .info li {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Hover'da görselin biraz büyümesi */
+/*.card:hover .image img {
+    transform: scale(1.1);
+}
+
+/* Cards konteyneri (kartları yerleştirecek ana konteyner) */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 sütunlu grid düzeni */
+    gap: 20px; /* Kartlar arasındaki yatay ve dikey mesafe */
+    padding: 20px;
+}
+
+/* Her bir kartın düzeni */
+.card {
+    height: 350px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Kart üzerindeki hover efekti */
+.card:hover {
+    transform: scale(1.05); /* Üzerine gelince büyüme */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Hover efektiyle daha büyük gölge */
+}
+
+/* Kart içindeki görsel */
+.card .image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out; /* Görselin geçiş animasyonu */
+}
+
+/* Kart içindeki bilgiler */
+.card .info {
+    padding: 15px;
+}
+
+.card .info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card .info li {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Hover'da görselin biraz büyümesi */
+.card:hover .image img {
+    transform: scale(1.1);
+}
 
 
 
